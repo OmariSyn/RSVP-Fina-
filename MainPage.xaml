@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RsV__Application_Final.MainPage"
+             Title="RSV Application">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <!-- Form Fields -->
+            <Entry x:Name="NameEntry" Placeholder="Name" />
+            <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email" />
+            <Entry x:Name="PhoneEntry" Placeholder="Phone" Keyboard="Telephone" />
+            <Editor x:Name="NotesEditor" Placeholder="Notes" HeightRequest="100" />
+
+            <!-- Buttons -->
+            <Button Text="Save Entry" Clicked="OnSaveClicked" />
+            <Button Text="View Entries" Clicked="OnViewClicked" />
+            <Button Text="Search Entries" Clicked="OnSearchClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
